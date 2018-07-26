@@ -7,7 +7,7 @@ import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
-import org.springframework.boot.context.properties.ConfigurationBeanFactoryMetaData;
+import org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.core.annotation.AnnotationUtils;
 
@@ -16,9 +16,9 @@ import org.springframework.core.annotation.AnnotationUtils;
  * creates a scoped proxy for them.
  */
 public class ConfigPropertiesScopePostProcessor implements BeanFactoryPostProcessor {
-    ConfigurationBeanFactoryMetaData metaData;
+    ConfigurationBeanFactoryMetadata metaData;
 
-    public ConfigPropertiesScopePostProcessor(ConfigurationBeanFactoryMetaData metaData) {
+    public ConfigPropertiesScopePostProcessor(ConfigurationBeanFactoryMetadata metaData) {
         this.metaData = metaData;
     }
 

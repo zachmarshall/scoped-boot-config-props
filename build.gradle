@@ -8,7 +8,7 @@ repositories {
     mavenCentral()
 }
 
-def springBootVersion = '1.5.12'
+def springBootVersion = '2.0.3'
 
 dependencyManagement {
     imports {
